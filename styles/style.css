@@ -4,6 +4,14 @@
   *{
     font-family: 'Work Sans', sans-serif;
   }
+  .btn-primary{
+    background: #FF900E;
+    border-radius: 8px;
+    color: #FFF;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
 header{
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
@@ -48,6 +56,66 @@ nav ul li a{
 }
 .banner-description{
     color: #727272;
-    
+}
+.banner img{
+    margin-top: 20px;
+    max-width: 100%;
+}
 
+
+
+/* Responsive Design */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:850px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+
+
+/* Main related styles */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding-left: 72px;
+    padding-right: 72px;
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.teams-title .quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.teams-title .quick-our{
+    color: #131313;
+    font-weight: 700;
+}
+.teams-title .text-fetured{
+    color: #FF900E;
+    font-weight: 700;
 }
